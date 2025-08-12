@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    <style>
+        /* General body styling for the gradient background */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2d004d 0%, #6a0099 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: black;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* A contrasting color for the hover effect */
+        }
+
+        /* Main content styling for the two-column layout */
+        main {
+            flex-grow: 1;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .description-container {
+            display: flex;
+            gap: 2rem;
+            max-width: 900px;
+            align-items: center;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
+        .image-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid #ffcc00;
+        }
+        
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .description-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="description-container">
+            <div class="text-content">
+                <h1>Welcome to My Portfolio!</h1>
+                <p>This is a brief introduction about who I am and what I do. You can use this space to highlight your skills, passion, and what you're looking for in your next role. Make a great first impression!</p>
+            </div>
+            <div class="image-container">
+                <!-- Replace this placeholder with your own photo -->
+                <img src="https://placehold.co/200x200/6a0099/ffffff?text=Your+Photo" alt="A placeholder for your profile picture">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

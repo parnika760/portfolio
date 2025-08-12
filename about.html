@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Portfolio</title>
+    <style>
+        /* General body styling for the gradient background */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2d004d 0%, #6a0099 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar styling with black background */
+        nav {
+            background-color: rgba(0, 0, 0, 1);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* A contrasting color for the hover effect */
+        }
+
+        /* Main content styling */
+        main {
+            flex-grow: 1;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .about-content {
+            max-width: 800px;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .action-button {
+            background-color: #ffcc00;
+            color: #2d004d;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .action-button:hover {
+            background-color: #e6b800;
+        }
+        
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .action-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p class="description">
+                I possess a versatile skill set that spans both frontend and backend development. On the frontend, I specialize in HTML, CSS, JavaScript, React, and TypeScript, enabling me to create responsive, efficient, and visually appealing user interfaces. On the backend, I work with Python and SQL to develop robust and scalable solutions, and I integrate machine learning techniques to enhance functionality and deliver intelligent features. My workflow is supported by tools such as Git, VS Code, Postman, and Figma, ensuring smooth collaboration, streamlined development, and high-quality outcomes. I am continuously expanding my knowledge and refining my skills to stay ahead in the ever-evolving technology landscape.
+            </p>
+            <div class="button-container">
+                <a href="#" class="action-button">LinkedIn</a>
+                <a href="#" class="action-button">Resume</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

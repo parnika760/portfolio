@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - My Portfolio</title>
+    <style>
+        /* General body styling for the gradient background */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2d004d 0%, #6a0099 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar styling with black background */
+        nav {
+            background-color: rgba(0, 0, 0, 1);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* A contrasting color for the hover effect */
+        }
+
+        /* Main content styling */
+        main {
+            flex-grow: 1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .project-box {
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect to move the box slightly upwards */
+        .project-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        
+        .project-box h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 992px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>My Projects</h1>
+        <div class="projects-grid">
+            <div class="project-box">
+                <h2>Project 1</h2>
+                <p>A brief description of your first project.</p>
+            </div>
+            <div class="project-box">
+                <h2>Project 2</h2>
+                <p>A brief description of your second project.</p>
+            </div>
+            <div class="project-box">
+                <h2>Project 3</h2>
+                <p>A brief description of your third project.</p>
+            </div>
+            <div class="project-box">
+                <h2>Project 4</h2>
+                <p>A brief description of your fourth project.</p>
+            </div>
+            <div class="project-box">
+                <h2>Project 5</h2>
+                <p>A brief description of your fifth project.</p>
+            </div>
+            <div class="project-box">
+                <h2>Project 6</h2>
+                <p>A brief description of your sixth project.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
